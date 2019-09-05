@@ -1,0 +1,44 @@
+.dd-container {
+    width: 30%;
+    margin: 50px 0px 0px 50px;
+}
+
+.btn {
+    border: solid 1px gray;
+    border-radius: 4px;
+    background-color: inherit;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    margin: 0px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    background-color: lightgray;
+}
+
+.dd-options {
+    border-radius: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.dd-options p {
+    padding: 10px;
+    border-top: solid 1px gray;
+    cursor: pointer;
+    transition: font-size 0.75s, background-color 0.25s;
+}
+
+.dd-options p:first-child {
+    border: none;
+}
+
+.dd-options p:hover {
+    background-color: lightgray;
+    font-size: 105%;
+}
