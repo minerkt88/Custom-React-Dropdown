@@ -7,6 +7,8 @@ const Dropdown = ({items}) => {
 
     const options = items.map((e,i) => {
         return (<p key={i}>{e}</p>)
+        // Maybe I was missing the bind call
+        // return (<button onClick={function.bind(null,argument)}>{e}</button>)
     });
 
     return (

@@ -11,34 +11,41 @@
     padding: 10px;
     width: 100%;
     margin: 0px;
+    transition: background-color .5s;
 }
 
 .btn:focus {
     outline: none;
 }
 
-.btn:hover {
-    background-color: lightgray;
-}
-
 .dd-options {
     border-radius: 10px;
     padding: 0px;
     margin: 0px;
+    animation: text .75s 1;
 }
 
 .dd-options p {
     padding: 10px;
     border-top: solid 1px gray;
+    border-radius: 0 0 10px 10px;
     cursor: pointer;
-    transition: font-size 0.75s, background-color 0.25s;
+    /* transition: background-image 5s; */
+    transition: background-color .5s;
 }
 
-.dd-options p:first-child {
+/* .dd-options p:first-child {
     border: none;
+} */
+
+.btn:hover, .dd-options p:hover {
+    /* background-image: linear-gradient(to right,lightgrey,white); */
+    background-color:rgba(211, 211, 211, 0.5);
 }
 
-.dd-options p:hover {
-    background-color: lightgray;
-    font-size: 105%;
+@keyframes text {
+    0% {
+        opacity: 0;
+        margin: -40px;
+    }
 }
