@@ -1,5 +1,7 @@
 * {
     font-family: sans-serif;
+    /* margin: 0;
+    padding: 0; */
 }
 
 .dd-container {
@@ -36,11 +38,11 @@
     border-radius: 10px;
     padding: 0px;
     margin: 0px;
-    animation: text1 .75s;
+    animation: text1 .75s ;
 }
-.dd-options .active {
+/* .dd-options .active {
     animation: text1 .75s reverse;
-}
+} */
 
 .dd-options p {
     padding: 10px;
@@ -69,6 +71,10 @@
     0% {
         opacity: 0;
         margin: -40px;
+    }
+    100% {
+        opacity: 1;
+        margin: 0;
     }
 }
 
